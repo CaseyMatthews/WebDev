@@ -31,12 +31,14 @@ const server = express();
 server.get('/', (req, res) => {
 
     res.sendFile(path.join(__dirname + '/index.html'));
+    console.log("Sent Page!!!")
 
 });
 
 server.get('/favicon.*', (req, res) => {
 
-    res.sendFile('/path/to/icon');
+    res.sendFile(path.join(__dirname + '/favicon.png'));
+    console.log("Sent Icon!!!!")
     
 });
 
