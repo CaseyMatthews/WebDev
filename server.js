@@ -24,18 +24,25 @@
 //server.listen(3000);
 
 import express from 'express';
+import path from 'path';
 
 const server = express();
 
 server.get('/', (req, res) => {
 
-    res.send({message: 'Hello Express'});
+    res.sendFile(path.join(__dirname + '/index.html'));
 
 });
 
 server.get('/favicon.*', (req, res) => {
 
     res.sendFile('/path/to/icon');
+    
+});
+
+server.get('/style.css', (req, res) => {
+
+    res.sendFile(path.join(__dirname + '/style.css'));
     
 });
 
