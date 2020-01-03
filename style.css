@@ -12,6 +12,10 @@ p {
     margin: 100px;
 }
 
+div#pagecontent {
+    width: 50%;
+    margin: auto;
+}
 a:link {
     color: red;
     background-color: transparent;
