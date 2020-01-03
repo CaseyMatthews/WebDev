@@ -1,3 +1,49 @@
 body {
-    background-color: aliceblue;
+    background-color: #c3ceea;
+}
+
+p {
+    border: 1px solid black;
+    padding: 30 px;
+    margin: 50 px;
+}
+
+#p01 {
+    margin: 100px;
+}
+
+a:link {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkred;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: yellow;
+}
+
+a.buttonlink {
+    background-color: #132a6d;
+    color: #f4df2e;
+    padding: 15px 25px;
+    text-align: center;
+    width: 15%;
+    text-decoration: none;
+    display: inline-block;
+}
+a.buttonlink:hover {
+    color: #dfdddd;
+    background-color: #a2112e;;
 }
